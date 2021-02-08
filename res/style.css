@@ -1,0 +1,223 @@
+html {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+body {
+  font-family: "Avenir LT Pro";
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.anchor {
+  display: block;
+  position: relative;
+  visibility: hidden;
+}
+/* Footer */
+
+.footer {
+  width: 100%;
+  height: 300px;
+  bottom: 0;
+  background-color: #eeeeee;
+}
+
+/* Nav Bar */
+
+.nav {
+  z-index: 100;
+  padding-left: 70px;
+  padding-right: 70px;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav a {
+  padding: 24px 28px 26px 12px;
+  float: right;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #222222;
+  transition: all 0.2s ease-in-out;
+}
+
+.nav > .nav-logo {
+  padding: 12px 0 10px 32px;
+  float: left;
+}
+.nav-logo img {
+  height: 56px;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-scroll {
+  background-color: #ffffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.nav a:hover {
+  transform: scale(1.1);
+}
+
+.nav > .nav-active {
+  color: #39b44a;
+}
+
+.nav-menu {
+  display: none;
+}
+
+/* Splash*/
+.splash {
+  width: 100%;
+  height: 100%;
+  overflow-x: visible;
+  display: flex;
+}
+
+.splash-title {
+  box-sizing: border-box;
+  padding-top: 240px;
+  padding-left: 220px;
+}
+
+.splash-title h1 {
+  text-align: unset;
+  font-weight: 500;
+  font-size: 74px;
+  line-height: 0.4;
+}
+.splash-title p {
+  margin-top: -10px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.splash img {
+  align-self: center;
+  margin: 0 0 0 50px;
+  width: 50%;
+  object-fit: contain;
+}
+
+.splash-title b {
+  color: #0b6623;
+  font-weight: 700;
+}
+
+/* About */
+
+.about {
+  padding: 20px 0 20px 0;
+}
+
+h1 {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+}
+
+.about p {
+  text-align: justify;
+  text-justify: inter-word;
+  padding-left: 180px;
+  padding-right: 180px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 24px;
+  line-height: 1.5;
+  display: inline-block;
+}
+/* Contact */
+.contact-us {
+  justify-content: center;
+  display: flex;
+  padding-bottom: 40px;
+}
+.contact-us a {
+  transition: all 0.2s ease-in-out;
+  padding: 20px;
+  font-size: 28px;
+}
+
+.contact-us a:hover {
+  transform: scale(1.1);
+}
+
+.contact-us i {
+  font-size: 30px;
+}
+
+/*------Members Page-----*/
+
+.members {
+  padding-top: 70px;
+}
+
+.members-container {
+  display: flex;
+  justify-content: center;
+}
+
+.member-card {
+  padding: 25px;
+}
+
+.member-card h3 {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.member-card p {
+  font-size: 18px;
+  color: #747474;
+}
+
+.member-card-image {
+  position: relative;
+  height: 350px;
+  width: 290px;
+}
+
+.member-card-image a {
+  z-index: 10;
+  font-size: 50px;
+  color: #ffffff00;
+  position: absolute;
+  text-align: center;
+
+  transition: all 0.45s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-color: #00000000;
+}
+
+.member-card-image a:hover {
+  color: #ffffffff;
+  background-color: #00000077;
+}
+
+.member-card-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+::selection {
+  background-color: #0b6623;
+  color: #ffffff;
+}
